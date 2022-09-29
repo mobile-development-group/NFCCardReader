@@ -1,15 +1,13 @@
-❗this library is no longer supported. For future references try to use the [original repo](https://github.com/devnied/EMV-NFC-Paycard-Enrollment) I forked from.
-
 # NFC Card Reader
 ![Release](https://jitpack.io/v/mobile-development-group/NFCCardReader.svg)
 
 This library helps developer to read data from credit card: card number, expired date, card type.<br>
 <i>Works only with cards that has paypass or paywave technology!</i>
 
-1[Screenshots](#screenshots)
-2[Usage](#usage)
-3[Callbacks](#callbacks)
-4[License](https://github.com/mobile-development-group/NFCCardReader/blob/main/LICENSE)
+1. [Screenshots](#screenshots)
+2. [Usage](#usage)
+3. [Callbacks](#callbacks)
+4. [License](https://github.com/mobile-development-group/NFCCardReader/blob/master/LICENSE)
 
 # Screenshots
 ![Start](screenshots/Screenshot_20160428-122024.png "Start")
@@ -17,8 +15,7 @@ This library helps developer to read data from credit card: card number, expired
 ![Ready](screenshots/Screenshot_20160428-122045.png "Ready")
 
 # Usage
-##### Add the JitPack repository to your build file
-Add it in your root build.gradle at the end of repositories:
+##### Add it in your root build.gradle at the end of repositories:
 ```
 allprojects {
     repositories {
