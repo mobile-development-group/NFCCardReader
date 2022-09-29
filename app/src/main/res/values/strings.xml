@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">NFC Credit Card Reader</string>
-    <string name="repoUrl">https://github.com/pro100svitlo/Credit-Card-NFC-Reader#questions-and-help</string>
+    <string name="app_name">NFC Card Reader</string>
+    <string name="repoUrl">https://github.com/mobile-development-group/NFCCardReader</string>
     <string name="tv_noNfc">There is no NFC module on this device</string>
     <string name="tv_tapYourCard">Please put your card to back panel of the phone</string>
     <string name="ad_progressBar_title">Scanning ...</string>

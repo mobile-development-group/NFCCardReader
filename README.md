@@ -1,30 +1,37 @@
 ❗this library is no longer supported. For future references try to use the [original repo](https://github.com/devnied/EMV-NFC-Paycard-Enrollment) I forked from.
 
-# Credit Card NFC Reader
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Credit--Card--NFC--Reader-green.svg?style=true)](https://android-arsenal.com/details/1/3501)
+# NFC Card Reader
+![Release](https://jitpack.io/v/mobile-development-group/NFCCardReader.svg)
 
 This library helps developer to read data from credit card: card number, expired date, card type.<br>
 <i>Works only with cards that has paypass or paywave technology!</i>
 
-1. [Demo](https://play.google.com/store/apps/details?id=com.pro100svitlo.nfccardread)
-2. [Screenshots](#screenshots)
-3. [Usage](#usage)
-4. [Callbacks](#callbacks)
-5. [Proguard](#proguard)
-5. [Updates](#updates)
-6. [License](#license)
+1[Screenshots](#screenshots)
+2[Usage](#usage)
+3[Callbacks](#callbacks)
+4[License](https://github.com/mobile-development-group/NFCCardReader/blob/main/LICENSE)
 
 # Screenshots
-![alt text](screenshots/Screenshot_20160428-122024.png "Start")
-![alt text](screenshots/Screenshot_20160428-122036.png "Scanning")
-![alt text](screenshots/Screenshot_20160428-122045.png "Ready")
+![Start](screenshots/Screenshot_20160428-122024.png "Start")
+![Scanning](screenshots/Screenshot_20160428-122036.png "Scanning")
+![Ready](screenshots/Screenshot_20160428-122045.png "Ready")
 
 # Usage
+##### Add the JitPack repository to your build file
+Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+    repositories {
+	...
+	maven { url 'https://jitpack.io' }
+	}
+}
+```
 ##### Add the dependencies to your gradle file:
 ```sh
-    dependencies {
-        compile 'com.github.pro100svitlo:creditCardNfcReader:1.0.3'
-    }
+dependencies {
+    implementation 'com.github.mobile-development-group:NFCCardReader:1.0.3'
+}
 ```
 
 ##### Inside your Manifest:
@@ -145,38 +152,3 @@ This is the main callback for managing:
         //notify user that scannig finished
     }
 ```
-
-### Proguard
-If you are using Proguard, please add this line to your proguard-rules.pro file
-```
--keep class com.noveogroup.android.log.** { *; }
-```
-
-### Updates
-* v.1.0.0
-    1. Add Ingdirect Bank visa card (Australian Bank)
-    2. Add default card type as <b>UNKNOWN</b>.
-
-
-### License
-The MIT License (MIT)
-
-Copyright (c) 2016 Credit Card NFC Reader
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

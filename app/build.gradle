@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 33
     buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.pro100svitlo.nfccardread"
         minSdkVersion 16
-        targetSdkVersion 23
-        versionCode 5
-        versionName "1.0.2"
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0.0"
     }
     buildTypes {
         release {
@@ -20,9 +20,8 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.2.1'
-    compile 'com.android.support:design:23.2.1'
-    compile 'com.github.pro100svitlo:creditCardNfcReader:1.0.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(":nfccardreader")
+    implementation 'com.android.support:appcompat-v7:23.2.1'
+    implementation 'com.android.support:design:23.2.1'
 }
